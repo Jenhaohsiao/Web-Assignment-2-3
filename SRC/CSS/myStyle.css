@@ -1,3 +1,24 @@
-.myTest {
-    color: blue;
+/* For the screen size bigger than 800px */
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c04c4c;
+    height: 500px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        background-color: #697926;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        background-color: #262d79;
+        /* width: 800px;
+        margin-left: auto;
+        margin-right: auto; */
+    }
 }
