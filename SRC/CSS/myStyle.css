@@ -1,24 +1,68 @@
 /* For the screen size bigger than 800px */
 
-.container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #c04c4c;
-    height: 500px;
+.titleText {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
 }
 
 @media (max-width: 800px) {
-    .container {
+    .titleText {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titleText {
+        font-size: 20px;
+    }
+}
+
+#item_1 {
+    background-color: #2a90df;
+}
+
+#item_2 {
+    background-color: #087221;
+}
+
+#item_3 {
+    background-color: #8a7b24;
+}
+
+#item_4 {
+    background-color: #2d2d3a;
+}
+
+#item_5 {
+    background-color: #d553cc;
+}
+
+.grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_responsive_size {
+    max-width: 1000px;
+    grid-template-columns: 60% 40%;
+    /* grid-template-columns: auto auto; */
+    grid-template-rows: 100px 100px;
+}
+
+@media (max-width: 800px) {
+    .container_responsive_size {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 100px;
         background-color: #697926;
     }
 }
 
 @media (max-width: 600px) {
-    .container {
+    .container_responsive_size {
+        grid-template-columns: auto;
+        grid-template-rows: 100px 100px 100px 100px 100px;
         background-color: #262d79;
-        /* width: 800px;
-        margin-left: auto;
-        margin-right: auto; */
     }
 }
