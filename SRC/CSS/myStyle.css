@@ -31,7 +31,7 @@
 }
 
 #item_4 {
-    background-color: #2d2d3a;
+    background-color: #848585;
 }
 
 #item_5 {
@@ -46,23 +46,21 @@
 
 .container_responsive_size {
     max-width: 1000px;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
     /* grid-template-columns: auto auto; */
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 200px 100px;
 }
 
 @media (max-width: 800px) {
     .container_responsive_size {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100px 100px 100px;
-        background-color: #697926;
+        grid-template-rows: 150px 150px 150px;
     }
 }
 
 @media (max-width: 600px) {
     .container_responsive_size {
         grid-template-columns: auto;
-        grid-template-rows: 100px 100px 100px 100px 100px;
-        background-color: #262d79;
+        grid-template-rows: 200px 200px 200px 200px 200px;
     }
 }
